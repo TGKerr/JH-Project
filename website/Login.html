@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+		<link rel = "stylesheet" href = "CSS/stylesheet.css">
+    </head>
+    <body>
+      <div class="login-page">
+        <div class="form">
+          <form class="register-form">
+            <input id = "regname" type="text" placeholder="Name"/>
+			<input id = "regpass" type="password" placeholder="Password"/>
+			<div id = "Error"></div>
+            <button onclick="register()">create</button>
+            <p class="message">Already registered? <a href="#">Sign In</a></p>
+          </form>
+          <form class="login-form">
+            <input id = "logname" type="text" placeholder="Username"/>
+			<input id = "logpass" type="password" placeholder="Password"/>
+			<div id = "ErrorLogin"></div>
+            <div><button onclick="login()">login</button></div>
+            <p class="message">Not registered? <a href="#">Create an account</a></p>
+          </form>
+        </div>
+	  </div>
+	  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+		<script src="JS/Login.js"></script>
+	<script src="JS/Client.js"></script>
+    </body>
+</html>

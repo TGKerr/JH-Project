@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Filters</title>
+        <link rel = "stylesheet" href = "CSS/stylesheet.css">
+    </head>
+    <body onload="httpGetFilt()">
+        <div class = "main-page">
+            <ul class = "nav">
+                <li><a href = "News.html">News</a></li>
+                <li><a>Filters</a></li>
+            </ul>
+            <div class = "main-content">
+                <h1>Your Filters</h1>
+                <div id = "Filters"></div>
+                <form>
+                    <input id = "filter" type="text">
+					<input type="button" value="Add" onclick="httpPost()">
+					<input type="button" value="Delete" onclick="httpPostDel()">
+                </form>
+            </div>
+		</div>
+		<script src="JS/Client.js"></script>
+    </body>
+</html>
